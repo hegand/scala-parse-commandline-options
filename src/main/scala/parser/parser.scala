@@ -54,6 +54,9 @@ object Parser {
         log.warn(line)
       }
 
+      val t = spark.read.textFile(jobConfig.configPath)
+      log.info("number of rows in config file = " + t.count())
+
     } getOrElse {
 
     }
