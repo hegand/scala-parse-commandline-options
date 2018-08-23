@@ -1,6 +1,6 @@
 name := "spark-parse-commandline-options"
 
-version := "0.1"
+version := "0.3"
 
 scalaVersion := "2.11.12"
 
