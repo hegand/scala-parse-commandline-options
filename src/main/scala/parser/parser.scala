@@ -45,8 +45,8 @@ object Parser {
   def main(args: Array[String]) {
     val log = LogManager.getRootLogger
     log.setLevel(Level.INFO)
-    Logger.getLogger("org").setLevel(Level.OFF)
-    Logger.getLogger("akka").setLevel(Level.OFF)
+    //Logger.getLogger("org").setLevel(Level.OFF)
+    //Logger.getLogger("akka").setLevel(Level.OFF)
 
     val spark = SparkSession.builder().getOrCreate()
     log.info("Spark version " + (spark.version))
